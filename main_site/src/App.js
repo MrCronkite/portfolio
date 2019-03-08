@@ -14,6 +14,7 @@ class App extends Component {
         </div>
         <div className = "my_works">
           <h2>my works</h2>
+          <div></div>
         </div>
       </div>
     );
