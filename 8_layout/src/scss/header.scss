@@ -4,11 +4,14 @@
 
 .header{
     display: flex;
+    background: url("./imgs/mountain.png") no-repeat;
+    background-size: cover;
     &__menu{
         position: relative;
         background-color:#fff;
+        min-height: 700px;
         height: 100vh;
-        width: 80px;
+        width: 5vw;
         color: $grey;
         text-align: center;
         a{
@@ -38,9 +41,12 @@
    
 
     &__main{
-        background-image: url("./imgs/mountain.png");
+        position: relative;
+        min-height: 700px;
         height: 100vh;
         width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+
        &__logo{
            display: flex;
            justify-content: space-between;
@@ -53,10 +59,57 @@
                }
                p{
                    color: $grey;
-                   font-size: 13px;
+                   font-size: 10px;
                    text-align: right;
+                   text-transform: uppercase;
                }
 
+           }
+       }
+       & .main__title{
+           p{
+               padding:  50px 50px 20px 50px;
+               color: $green;
+               font-size: 1.5vw;
+               letter-spacing: 2.4px;
+               font-stretch: ultra-expanded;
+           }
+           h1{
+            color: #fff;
+            padding: 0px 0px 0px 50px;
+            margin-right: 28%;
+            font-size: 3.5vw;
+
+           }
+       }
+       & .main__tile{
+           display: flex;
+           color: #fff;
+           margin-top: 8vw;
+           margin-left: 50px;
+           margin-right: 50%;
+           margin-bottom: 40px;
+           justify-content: space-between;
+           font-size: 15px;
+           clear: both;
+           p{
+            padding: 5px 2vw 15px 0px;
+            border-bottom: 1px solid #fff;
+           }
+       }
+
+       & .button{
+           position: absolute;
+           text-decoration: none;
+           color: #fff;
+           bottom: 0px;
+           right: 20%;
+           padding: 15px;
+           background-color: $green;
+           i{
+               font-size: 25px;
+               padding: 4px;
+               vertical-align: middle;
            }
        }
     }
