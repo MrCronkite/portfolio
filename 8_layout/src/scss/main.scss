@@ -6,7 +6,7 @@
 
 html, body{
     @include clear;
-    width: 100%;
+    min-width: 700px;
     font-family: 'Raleway', sans-serif;
 }
 
