@@ -3,44 +3,87 @@
 
 .about-us{
    display: flex;
-    &__menu{
-            background-color:#fff;
-            min-height: 700px;
-            height: 100vh;
-            min-width: 40px;
-            width: 4.8vw;
-            color: $grey;
-            text-align: center;
-            a{
-                display: block;
-                margin-top: 40px;
-                text-decoration: none;
-                color: $grey;
-                clear: both;
-            }
-            & .link__socnetworks{
-                display: flex;
-                transform: rotate(-90deg);
-                margin-top: 70vh;
-                p{  
-                    display: flex;
-                    padding-right: 25px;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    padding-top: 3px;   
-                }
-                i{
-                    font-size: 20px;
-                    padding-right: 5px;
-                }
-            }
+   &__menu{
+    position: relative;
+    background-color:#fff;
+    min-height: 700px;
+    height: 100vh;
+    min-width: 40px;
+    width: 4.8vw;
+    color: $grey;
+    text-align: center;
+    a{
+        display: block;
+        margin-top: 40px;
+        text-decoration: none;
+        color: $grey;
+        clear: both;
+        transition: .6s;
+    }
+    a:hover{
+        color: $green;
+    }
+    & .link__socnetworks{
+        display: flex;
+        transform: rotate(-90deg);
+        margin-top: 70vh;
+        cursor: pointer;
+        p{  
+            position: relative;
+            display: flex;
+            padding-right: 40px;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding-top: 0px;  
+            transition: .6s; 
         }
+        p:hover{
+            color:$green;
+        }
+        i{
+            position: absolute;
+            top: -3px;
+            left: -24px;
+            font-size: 20px;
+            padding-right: 5px;
+        }
+    }
+}
        &__content{
            min-height: 700px;
            height: 100vh;
            display: flex;
            justify-content: space-between;
            align-items: center;
+           position: relative;
+           & .content__nav{
+            position: absolute;
+            right: -130px;
+            bottom: 50%;
+            span{
+             position: absolute;
+             top: 50%;
+             height: 1px;
+             background-color: #000;
+            }
+            & .first{
+               top: 5px;
+              
+               width: 15px;
+               margin-left: 15px;
+            }
+            & .second{
+                top: 20px;
+                width: 30px;
+                background-color: $green;
+              
+            }
+            & .third{
+                 top: 35px;
+                 width: 15px;
+                 margin-left: 15px;
+            }
+        }
            & .video{
                height: 100%;
                width: 40vw;
@@ -50,6 +93,7 @@
                display: flex;
                justify-content: center;
                align-items: center;
+               cursor: pointer;
                & .play{
                 height: 100px;
                 width: 150px;
@@ -59,6 +103,7 @@
                    font-size: 60px;
                    color: $green;
                    padding: 4px;
+                   transition: .4s;
                }
               
                a{  
@@ -66,6 +111,13 @@
                    text-decoration: none;
                    font-size: 15px;
                    color: #fff;
+               }
+           }
+           & .video:hover{
+               & .play{
+                   i{
+                       font-size: 100px;
+                   }
                }
            }
 
@@ -92,17 +144,20 @@
                        background-color: #f2f2f2;
                        height: 150px;
                        width: 220px;
-                     
+                       transition: .6s;
                        padding: 10px 10px 10px 0px;
                        justify-content: center;
                        img{
-                          margin-left: 30%; 
+                          margin-left: 35%; 
                        }
                        p{
                            text-align: center;
                            padding: 20px;
                            font-weight: 100;
                        }
+                   }
+                   & .wraper__tile:hover{
+                       border-radius: 50%;
                    }
                } 
 

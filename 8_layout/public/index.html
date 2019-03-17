@@ -18,11 +18,11 @@
                     <p>меню</p>
                 </a>
                <div class="link__socnetworks">
-                    <i class="fab fa-instagram"></i>
+                   
                   
-                           <p> instagram</p>
-                           <i class="fab fa-vk"></i>
-                            <p> vkontakte</p>
+                           <p> <i class="fab fa-instagram"></i> instagram</p>
+                         
+                            <p>  <i class="fab fa-vk"></i> vkontakte</p>
                </div>
             </div>
             <div class="header__main">
@@ -31,6 +31,11 @@
                     <div class="logo__tell">
                             <a href="tel:+375299876543">+375 29 987 65 43</a>
                             <p>обратный звонок</p>
+                    </div>
+                    <div class="main__nav">
+                     <span class="first"></span>
+                      <span class="second"></span>
+                      <span class="third"></span>
                     </div>
                 </div>
                 <div class="main__title">
@@ -47,26 +52,33 @@
                         <div class="tile__title">
                                 <p>Улучшаем имидж<br/> компании:</p>
                             </div>
-                        <a class="button" href="#"><i class="fas fa-arrow-down"></i> Мы в этом шарим!</a>
+                            <div id="to_both" class="down__button">
+                                    <a class="button"><i class="fas fa-arrow-down"></i> Мы в этом шарим!</a>
+                            </div>
                    </div>
             </div>
         </header>
-        <main class="about-us">
+        <main  id="about" class="about-us">
                 <div class="about-us__menu">
                         <a href="#">
                             <i class="fa fa-th"></i>
                             <p>меню</p>
                         </a>
                        <div class="link__socnetworks">
-                            <i class="fab fa-instagram"></i>
+                           
                           
-                                   <p> instagram</p>
-                                   <i class="fab fa-vk"></i>
-                                    <p> vkontakte</p>
+                                   <p> <i class="fab fa-instagram"></i> instagram</p>
+                                  
+                                    <p> <i class="fab fa-vk"></i> vkontakte</p>
                        </div>
                     </div>
                   <div class="about-us__content">
-                      <div class="video">
+                        <div class="content__nav">
+                                <span class="first"></span>
+                                 <span class="second"></span>
+                                 <span class="third"></span>
+                               </div>
+                      <div onclick="return location.href = 'https://www.youtube.com/embed/1GR5Z2LDqJk'" class="video">
                         <div class="play">
                                 <i class="far fa-play-circle"></i> <br/>
                                 <a href="#">Как это работает</a>
@@ -96,11 +108,11 @@
                             <p>меню</p>
                         </a>
                        <div class="link__socnetworks">
-                            <i class="fab fa-instagram"></i>
+                           
                           
-                                   <p> instagram</p>
-                                   <i class="fab fa-vk"></i>
-                                    <p> vkontakte</p>
+                                   <p> <i class="fab fa-instagram"></i> instagram</p>
+                                   
+                                    <p> <i class="fab fa-vk"></i> vkontakte</p>
                        </div>
             </div>
             <div class="auth__story">
@@ -110,10 +122,14 @@
                            <p class="slider__data">01 / 04</p>
                            <div class="slider__action">
                                 <div class="buttons">
-                                        <i class="fas fa-angle-left"></i>
-                                        <i class="fas fa-angle-right"></i>
+                                        <i class="fas fa-angle-left" id="next"></i>
+                                        <i class="fas fa-angle-right" id="prew"></i>
                                 </div>
-                                <img src="./imgs/img.png" alt="">
+                                 <ul class="slider__rol">
+                                     <li  class="slides__data active"><img src="./imgs/img.png" alt="">  </li>
+                                     <li  class="slides__data "><img src="./imgs/img.png" alt=""></li>
+                                     <li  class="slides__data"><img src="./imgs/img.png" alt=""></li>
+                                 </ul>
                            </div>
                            <p class="slider__act">восхождение</p>
                            <b>Покорили ледяные вершины <br> с командой <span>HBO</span></b>
@@ -130,10 +146,14 @@
                                     <p class="slider__data">02 / 05</p>
                                     <div class="slider__action">
                                          <div class="buttons">
-                                                 <i class="fas fa-angle-left"></i>
-                                                 <i class="fas fa-angle-right"></i>
+                                                 <i id="next1" class="fas fa-angle-left"></i>
+                                                 <i id="prew1" class="fas fa-angle-right"></i>
                                          </div>
-                                         <img src="./imgs/img2.png" alt="">
+                                         <ul class="slider__rol">
+                                            <li  class="slides__data showing"><img src="./imgs/img2.png" alt="">  </li>
+                                            <li  class="slides__data"><img src="./imgs/img2.png" alt=""></li>
+                                            <li  class="slides__data"><img src="./imgs/img2.png" alt=""></li>
+                                        </ul>
                                     </div>
                                     <p class="slider__act">погружение</p>
                                     <b>Поплавали за рыбками <br> с <span>National Geographic</span></b>
@@ -162,8 +182,10 @@
                 <p class="last__title">Если есть какие-либо вопросы - пишите на почту. с которой пприслали тестовое</p>
             </div>
         </footer>
+        <input type="button" id="to_boths" value="sxcsa">
       </div>
 	
-        <script src="app.js"></script>
+      <script  src="app.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>

@@ -21,19 +21,32 @@
             text-decoration: none;
             color: $grey;
             clear: both;
+            transition: .6s;
+        }
+        a:hover{
+            color: $green;
         }
         & .link__socnetworks{
             display: flex;
             transform: rotate(-90deg);
             margin-top: 70vh;
+            cursor: pointer;
             p{  
+                position: relative;
                 display: flex;
-                padding-right: 25px;
+                padding-right: 40px;
                 text-transform: uppercase;
                 font-size: 12px;
-                padding-top: 3px;   
+                padding-top: 0px;  
+                transition: .6s; 
+            }
+            p:hover{
+                color:$green;
             }
             i{
+                position: absolute;
+                top: -3px;
+                left: -24px;
                 font-size: 20px;
                 padding-right: 5px;
             }
@@ -52,6 +65,35 @@
            display: flex;
            justify-content: space-between;
            padding: 50px;
+           & .main__nav{
+               position: absolute;
+               right: 60px;
+               bottom: 50%;
+
+               span{
+                position: absolute;
+                top: 50%;
+                height: 1px;
+                
+                background-color: #fff;
+               }
+               & .first{
+                  top: 5px;
+                  background-color: $green;
+                  width: 30px;
+               }
+               & .second{
+                   top: 20px;
+                   width: 15px;
+                   margin-left: 15px;
+               }
+               & .third{
+                    top: 35px;
+                    width: 15px;
+                    margin-left: 15px;
+               }
+           }
+         
            & .logo__tell{
                a{
                    text-decoration: none;
@@ -99,19 +141,29 @@
            }
        }
 
-       & .button{
+       & .down__button{
            position: absolute;
-           text-decoration: none;
-           color: #fff;
            bottom: 0px;
            right: 20%;
-           padding: 15px;
-           background-color: $green;
-           i{
-               font-size: 25px;
-               padding: 4px;
-               vertical-align: middle;
+           cursor: pointer;
+           & .button{
+               background-color: $green;
+               text-decoration: none;
+               color: #fff;
+               width: 200px;
+               height: 60px;
+               display: block;
+               text-align: center;
+               line-height: 60px;
+               position: relative;
+               transition: .5s;
            }
-       }
+       & .button:hover{
+           color: $grey;
+           background-color: #fff;
+           border: 2px $green solid;
+           bottom: -2px;
+       }  
+        }
     }
 }
