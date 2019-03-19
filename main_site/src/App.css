@@ -2,8 +2,50 @@
   background-color: #fff;
   
 }
-
-.header i{
-   font-size: 350%;
-   color: rgb(57, 57, 148);
+.header{
+  height: 100vh;
 }
+h1{
+  text-align: center;
+  padding-top: 10%;
+  font-size: 4vw;
+}
+h1 i{
+  color: yellow;
+  transition: 1s;
+}
+
+
+
+
+.navbar{
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.navbar i{
+  color: yellow;
+  font-size: 30px;
+}
+
+h4{
+  text-align: center;
+  padding-top: 60px;
+}
+
+.down_button{
+  position: absolute;
+  bottom:  10px;
+  left: 50%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+}
+
+.down_button i {
+  padding-left:3px;
+  font-size: 20px;
+}
+
