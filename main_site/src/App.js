@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
+
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
       <div className="header">
-      <h1>I <i class="fa fa-heart"></i> JavaScript</h1>
+      <h1>I <i id="heart" class="fa fa-heart"></i> JavaScript</h1>
       <ul class="nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link" href="#">about me</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">skills</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <a class="nav-link" href="#">my works</a>
   </li>
 </ul>
    <h4>My love to work helps me to do it well, with attention to detail.</h4>
@@ -38,3 +39,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+

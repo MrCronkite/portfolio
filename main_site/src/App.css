@@ -16,22 +16,20 @@ h1 i{
 }
 
 
-
-
-.navbar{
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 5%;
+.nav-item a{
+  color: black;
+  transition: .5s;
 }
 
-.navbar i{
-  color: yellow;
-  font-size: 30px;
+.nav-item a:hover{
+   color:rgb(226, 226, 0);
 }
+
 
 h4{
   text-align: center;
-  padding-top: 60px;
+  padding-top: 10%;
+  font-size: 30px;
 }
 
 .down_button{
