@@ -10,16 +10,16 @@ class App extends Component {
     return (
       <div className="App">
       <div className="header">
-      <h1>I <i id="heart" class="fa fa-heart"></i> JavaScript</h1>
-      <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link" href="#">about me</a>
+      <h1>I <i id="heart" className="fa fa-heart"></i> JavaScript</h1>
+      <ul className="nav justify-content-center">
+  <li className="nav-item">
+    <a className="nav-link" href="#">about me</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">skills</a>
+  <li className="nav-item">
+    <a className="nav-link" href="#">skills</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">my works</a>
+  <li className="nav-item">
+    <a className="nav-link" href="#">my works</a>
   </li>
 </ul>
    <h4>My love to work helps me to do it well, with attention to detail.</h4>
@@ -27,7 +27,16 @@ class App extends Component {
 </div>
         <div className = "about_me">
           <h2>about me</h2>
-          <p></p>
+          <div className="cointainer">
+          <div className="row justify-content-md-center">
+    <div className="col-md-auto">
+      1 of 3
+    </div>
+    <div className="col-md-auto">
+      Variable width content
+    </div>
+  </div>
+          </div>
         </div>
         <div className = "my_works">
           <h2>my works</h2>
