@@ -47,8 +47,24 @@ h4{
   font-size: 20px;
 }
 
-
+.about_me{
+  margin-top: 2vw;
+  width: 95%;
+}
 
 h2{
   text-align: center;
+}
+
+.text{
+   width: 600px;
+   margin-left: 10px;
+   padding-left: 10px;
+   padding-right: 30px;
+}
+
+img{
+  padding-left: 10px;
+  max-width: 100%;
+  height: auto;
 }
