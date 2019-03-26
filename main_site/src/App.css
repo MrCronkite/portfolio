@@ -8,7 +8,6 @@
 h1{
   text-align: center;
   padding-top: 10%;
-  font-size: 4vw;
 }
 h1 i{
   color: yellow;
@@ -49,6 +48,7 @@ h4{
 
 .about_me{
   margin-top: 2vw;
+  margin-bottom: 10px;
   width: 95%;
 }
 
@@ -67,4 +67,26 @@ img{
   padding-left: 10px;
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
+
+.skills{
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  clear: top;
+}
+
+.progress{
+  height: 40px;
+  margin-top: 10px;
+}
+
+.progress-bar{
+  color: black;
+}
+
+h3{
+  padding-top: 20px;
+}
+

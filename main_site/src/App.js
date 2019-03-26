@@ -23,7 +23,7 @@ class App extends Component {
   </li>
 </ul>
    <h4>My love to work helps me to do it well, with attention to detail.</h4>
-   <button type="button" class="btn btn-warning down_button"><i class="fa fa-arrow-circle-o-down"></i></button>
+   <button type="button" className="btn btn-warning down_button"><i className="fa fa-arrow-circle-o-down"></i></button>
 </div>
         <div className = "about_me">
           <div className="cointainer">
@@ -42,9 +42,27 @@ class App extends Component {
   </div>
           </div>
         </div>
-        <div className = "my_works">
-          <h2>my works</h2>
-          <div></div>
+        <div className = "skills">
+          <h2>Skills</h2>
+          <h3>HTML/CSS</h3>
+          <div className="progress">
+            <div className="progress-bar bg-warning" role="progressbar" style={{width: "85%"}} aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+          <h3>JavaScript</h3>
+          <div className="progress">
+            <div className="progress-bar bg-warning" role="progressbar" style={{width: "60%"}} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+          <h3>Gulp/Webpack</h3>
+          <div className="progress">
+            <div className="progress-bar bg-warning" role="progressbar" style={{width: "50%"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+          <h3>React/Redux</h3>
+          <div className="progress">
+            <div className="progress-bar bg-warning" role="progressbar" style={{width: "40%"}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">40%</div>
+          </div>
+        </div>
+        <div className="myWorks">
+          
         </div>
       </div>
     );
