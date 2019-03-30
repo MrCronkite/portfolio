@@ -93,3 +93,8 @@ h3{
 .sr-only{
   color: black;
 }
+
+.content-carousel{
+  padding: 10%;
+  margin-bottom: 30px;
+}
