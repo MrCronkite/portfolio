@@ -7,6 +7,7 @@
 }
 h1{
   text-align: center;
+  font-size: 60px;
   padding-top: 10%;
 }
 h1 i{
@@ -90,11 +91,30 @@ h3{
   padding-top: 20px;
 }
 
-.sr-only{
-  color: black;
-}
 
 .content-carousel{
   padding: 10%;
   margin-bottom: 30px;
 }
+
+h5{
+  color: yellow;
+}
+
+.carousel-caption a{
+  text-decoration: none;
+  color: yellow;
+  font-size: 25px;
+  background-color: grey;
+  padding: 7px;
+  border-radius: 10px;
+  transition: .4s;
+}
+
+.carousel-caption a:hover{
+  background-color:yellow;
+  text-decoration: none;
+  color: black;
+}
+
+

@@ -30,11 +30,11 @@ class App extends Component {
           <div className="row justify-content-md-center">
     <div className="col-md-auto text">
     <h2>About me</h2>
-       <p>Привет! Меня зовут Владислав Шимченко. Я — верстальщик.</p>
-       <p> Большую часть времени я живу в Минске. Но иногда путешествую, люблю посещать новые места. Могу быстро собрать чемодан и уехать. Поэтому я хотел бы удалённую работу.</p>
-       <p> 3 года назад решил изменить свою жизнь и занялся изучением вёрстки и frontend‑разработки.</p>
-       <p> Опыт в универе научил меня серьёзно относиться к дедлайнам. С пониманием отношусь к авралам, но долгая работа в постоянном напряжении не идет мне на пользу (с кем‑то бывает иначе?).</p>
-       <p> Успешно приручил комплекс студента и использую его для постоянного саморазвития. Что в нашей области является огромным плюсом. Я неконфликтный человек с высоким уровнем эмпатии. Легко вливаюсь в коллектив.</p>
+       <p>Hello! My name is Vladislav Shimchenko. I am web developer.</p>
+       <p> Mostly I live in Minsk. But sometimes I like to travel, visit new places. I am ready to go in any moment. That’s why am interested in teleworking.</p>
+       <p> Three years ago I decided to change my life and start learning frontend development.</p>
+       <p> University experience taught me to be serious about deadlines. I understand that sometimes work should be done in a short time, but working under pressure doesn’t do me any good (and who did).</p>
+       <p> I constantly trying to develop myself. That is huge plus in our field. I am non-conflict person with high empathy level. Joining the team is always easy to me.</p>
     </div>
     <div className="col-md-auto">
       <img src="./img/logo.jpg"/>
@@ -73,38 +73,33 @@ class App extends Component {
           </ol>
           <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src="./img/less.png" className="d-block w-100" alt="nothing"/>
+        <img  src="./img/less.png" className="d-block w-100" alt="nothing"/>
         <div className="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <a  href="http://economic-money.surge.sh/">check project</a>
         </div>
       </div>
       <div className="carousel-item">
         <img src="./img/sass.png" className="d-block w-100" alt="nothing"/>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className="carousel-caption d-none d-md-block">
+        <a  href="http://economic-money.surge.sh/">check project</a>
         </div>
       </div>
       <div className="carousel-item">
         <img src="./img/viar.png" className="d-block w-100" alt="nothing"/>
         <div className="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <a  href="http://economic-money.surge.sh/">check project</a>
         </div>
       </div>
       <div className="carousel-item">
         <img src="./img/viar.png" className="d-block w-100" alt="nothing"/>
         <div className="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <a  href="http://economic-money.surge.sh/">check project</a>
         </div>
       </div>
       <div className="carousel-item">
         <img src="./img/viar.png" className="d-block w-100" alt="nothing"/>
         <div className="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+         <a  href="http://economic-money.surge.sh/">check project</a>
         </div>
       </div>
     </div>
