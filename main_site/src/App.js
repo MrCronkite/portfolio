@@ -71,81 +71,29 @@ class App extends Component {
           </div>
         </div>
         <div id="works" className="myWorks">
-        <div className="content-carousel">
-          <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
-          <ol className="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-          </ol>
-          <div className="carousel-inner">
-      <div className="carousel-item active">
-        <img  src="./img/less.png" width="600px" alt="nothing"/>
-        <div className="carousel-caption d-none d-md-block">
-        <a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#less">check LESS project</a>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <img src="./img/sass.png" className="d-block w-100" alt="nothing"/>
-        <div className="carousel-caption d-none d-md-block">
-        <a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#sass">check SASS project</a>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <img src="./img/react.png" className="d-block w-100" alt="nothing"/>
-        <div className="carousel-caption d-none d-md-block">
-        <a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#reactjs">check REACT project</a>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <img src="./img/viar.png" className="d-block w-100" alt="nothing"/>
-        <div className="carousel-caption d-none d-md-block">
-        <a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#htmlcss">check HTML/CSS project</a>
-        </div>
-      </div>
-      <div className="carousel-item">
-        <img src="./img/transit.png" className="d-block w-100" alt="nothing"/>
-        <div className="carousel-caption d-none d-md-block">
-         <a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#html5css3">check HTML5/CSS33 project</a>
-        </div>
-      </div>
-    </div>
-    <a className="carousel-control-prev " href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span className="carousel-control-prev-icon button__navs" aria-hidden="true"></span>
-      <span className="sr-only button__navs">Previous</span>
-    </a>
-    <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-sanlide="next">
-      <span className="carousel-control-next-icon button__navs" aria-hidden="true"></span>
-      <span className="sr-only button__navs">Next</span>
-    </a>
-          </div>
-          </div>
-        </div>
-
         <div>
         <h2> Single Item</h2>
         <Slider {...settings}>
           <div>
-            <h3>  <img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+          <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
           </div>
           <div>
-            <h3>  <img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+          <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
           </div>
           <div>
-          <h3>  <img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+           <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
           </div>
           <div>
-            <h3>4</h3>
+          <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
           </div>
           <div>
-            <h3>5</h3>
+            <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
           </div>
           <div>
-            <h3>6</h3>
+            <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
           </div>
         </Slider>
+      </div>
       </div>
       </div>
     );
