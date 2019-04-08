@@ -75,22 +75,28 @@ class App extends Component {
         <h2> Single Item</h2>
         <Slider {...settings}>
           <div>
-          <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+          <img  src="./img/less.png" width="600px" alt="nothing"/>
+          <h3>lorem</h3>
           </div>
           <div>
-          <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+          <img  src="./img/less.png" width="600px" alt="nothing"/>
+          <h3>lorem</h3>
           </div>
           <div>
-           <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+          <img  src="./img/less.png" width="600px" alt="nothing"/>
+           <h3>lorem</h3>
           </div>
           <div>
-          <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+          <img  src="./img/less.png" width="600px" alt="nothing"/>
+          <h3>lorem</h3>
           </div>
           <div>
-            <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+          <img  src="./img/less.png" width="600px" alt="nothing"/>
+            <h3>lorem</h3>
           </div>
           <div>
-            <h3><img  src="./img/less.png" width="600px" alt="nothing"/></h3>
+          <img  src="./img/less.png" width="600px" alt="nothing"/>
+            <h3>lorem</h3>
           </div>
         </Slider>
       </div>
