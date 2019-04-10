@@ -71,7 +71,7 @@ class App extends Component {
           </div>
         </div>
         <div id="works" className="myWorks">
-        <div className="bs">
+        <div className="block_slider">
         <h2> Single Item</h2>
         <Slider {...settings}>
           <div>
