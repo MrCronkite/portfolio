@@ -32,7 +32,6 @@ class App extends Component {
   </li>
 </ul>
    <h4>My love to work helps me to do it well, with attention to detail.</h4>
-   <button type="button" className="btn btn-warning down_button"><i className="fa fa-arrow-circle-o-down"></i></button>
 </div>
         <div id="about_me" className = "about_me">
           <div className="cointainer">
@@ -72,31 +71,27 @@ class App extends Component {
         </div>
         <div id="works" className="myWorks">
         <div className="block_slider">
-        <h2> Single Item</h2>
+        <h2> My Works</h2>
         <Slider {...settings}>
           <div>
-          <img  src="./img/less.png" width="600px" alt="nothing"/>
-          <h3>lorem</h3>
+          <img  src="./img/less.png"  alt="nothing"/>
+          <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#less">check LESS project</a></h3>
           </div>
           <div>
-          <img  src="./img/less.png" width="600px" alt="nothing"/>
-          <h3>lorem</h3>
+          <img  src="./img/sass.png"  alt="nothing"/>
+          <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#sass">check SASS project</a></h3>
           </div>
           <div>
-          <img  src="./img/less.png" width="600px" alt="nothing"/>
-           <h3>lorem</h3>
+          <img  src="./img/react.png"  alt="nothing"/>
+           <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#reactjs">check REACT project</a></h3>
           </div>
           <div>
-          <img  src="./img/less.png" width="600px" alt="nothing"/>
-          <h3>lorem</h3>
+          <img  src="./img/viar.png" alt="nothing"/>
+          <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#htmlcss">check HTML/CSS project</a></h3>
           </div>
           <div>
-          <img  src="./img/less.png" width="600px" alt="nothing"/>
-            <h3>lorem</h3>
-          </div>
-          <div>
-          <img  src="./img/less.png" width="600px" alt="nothing"/>
-            <h3>lorem</h3>
+          <img  src="./img/transit.png" alt="nothing"/>
+            <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#html5css3">check HTML5/CSS33 project</a></h3>
           </div>
         </Slider>
       </div>
