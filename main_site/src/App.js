@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
-import Slider from "react-slick"
-import './App.css';
-
-
-
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "./App.css";
 
 class App extends Component {
-
-
   render() {
     const settings = {
       dots: true,
@@ -18,90 +13,133 @@ class App extends Component {
     };
     return (
       <div className="App">
-      <div className="header">
-      <h1>I <i id="heart" className="fa fa-heart"></i> JavaScript</h1>
-      <ul className="nav justify-content-center">
-  <li className="nav-item">
-    <a className="nav-link" href="#about_me">about me</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="#skills">skills</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="#works">my works</a>
-  </li>
-</ul>
-   <h4>My love to work helps me to do it well, with attention to detail.</h4>
-</div>
-        <div id="about_me" className = "about_me">
+        <div className="header">
+          <h1>
+            I <i id="heart" className="fa fa-heart"></i> JavaScript
+          </h1>
+          <ul className="nav justify-content-center">
+            <li className="nav-item">
+              <a className="nav-link" href="#about_me">
+                about me
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#skills">
+                skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#works">
+                my works
+              </a>
+            </li>
+          </ul>
+          <h4>
+            My love to work helps me to do it well, with attention to detail.
+          </h4>
+        </div>
+        <div id="about_me" className="about_me">
           <div className="cointainer">
-          <div className="row justify-content-md-center">
-    <div className="col-md-auto text">
-    <h2>About me</h2>
-       <p>Hello! My name is Vladislav Shimchenko. I am web developer.</p>
-       <p> Mostly I live in Minsk. But sometimes I like to travel, visit new places. I am ready to go in any moment. That’s why am interested in teleworking.</p>
-       <p> Three years ago I decided to change my life and start learning frontend development.</p>
-       <p> University experience taught me to be serious about deadlines. I understand that sometimes work should be done in a short time, but working under pressure doesn’t do me any good (and who did).</p>
-       <p> I constantly trying to develop myself. That is huge plus in our field. I am non-conflict person with high empathy level. Joining the team is always easy to me.</p>
-    </div>
-    <div className="col-md-auto">
-      <img src="./img/logo.jpg" alt=""/>
-    </div>
-  </div>
+            <div className="row justify-content-md-center">
+              <div className="col-md-auto text">
+                <h2>About me</h2>
+                <p>
+                  Hello! My name is Vladislav Shimchenko. I am web developer.
+                </p>
+                <p>
+                  {" "}
+                  Mostly I live in Minsk. But sometimes I like to travel, visit
+                  new places. I am ready to go in any moment. That’s why am
+                  interested in teleworking.
+                </p>
+                <p>
+                  {" "}
+                  Three years ago I decided to change my life and start learning
+                  frontend development.
+                </p>
+                <p>
+                  {" "}
+                  University experience taught me to be serious about deadlines.
+                  I understand that sometimes work should be done in a short
+                  time, but working under pressure doesn’t do me any good (and
+                  who did).
+                </p>
+                <p>
+                  {" "}
+                  I constantly trying to develop myself. That is huge plus in
+                  our field. I am non-conflict person with high empathy level.
+                  Joining the team is always easy to me.
+                </p>
+              </div>
+              <div className="col-md-auto">
+                <img src="./img/logo.jpg" alt="" />
+              </div>
+            </div>
           </div>
         </div>
-        <div id="skills" className = "skills">
+        <div id="skills" className="skills">
           <h2>Skills</h2>
           <h3>HTML/CSS</h3>
           <div className="progress">
-            <div className="progress-bar bg-warning" role="progressbar" style={{width: "85%"}} aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            <div
+              className="progress-bar bg-warning"
+              role="progressbar"
+              style={{ width: "85%" }}
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              85%
+            </div>
           </div>
           <h3>JavaScript</h3>
           <div className="progress">
-            <div className="progress-bar bg-warning" role="progressbar" style={{width: "60%"}} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            <div
+              className="progress-bar bg-warning"
+              role="progressbar"
+              style={{ width: "60%" }}
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              60%
+            </div>
           </div>
           <h3>Gulp/Webpack</h3>
           <div className="progress">
-            <div className="progress-bar bg-warning" role="progressbar" style={{width: "50%"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            <div
+              className="progress-bar bg-warning"
+              role="progressbar"
+              style={{ width: "80%" }}
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              80%
+            </div>
           </div>
           <h3>React/Redux</h3>
           <div className="progress">
-            <div className="progress-bar bg-warning" role="progressbar" style={{width: "40%"}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">40%</div>
+            <div
+              className="progress-bar bg-warning"
+              role="progressbar"
+              style={{ width: "40%" }}
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              40%
+            </div>
           </div>
         </div>
         <div id="works" className="myWorks">
-        <div className="block_slider">
-        <h2> My Works</h2>
-        <Slider {...settings}>
-          <div>
-          <img  src="./img/less.png"  alt="nothing"/>
-          <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#less">check LESS project</a></h3>
+          <div className="block_slider">
+            <h2> My Works</h2>
           </div>
-          <div>
-          <img  src="./img/sass.png"  alt="nothing"/>
-          <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#sass">check SASS project</a></h3>
-          </div>
-          <div>
-          <img  src="./img/react.png"  alt="nothing"/>
-           <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#reactjs">check REACT project</a></h3>
-          </div>
-          <div>
-          <img  src="./img/viar.png" alt="nothing"/>
-          <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#htmlcss">check HTML/CSS project</a></h3>
-          </div>
-          <div>
-          <img  src="./img/transit.png" alt="nothing"/>
-            <h3><a  href="https://github.com/MrCronkite/portfolio/blob/master/README.md#html5css3">check HTML5/CSS33 project</a></h3>
-          </div>
-        </Slider>
-      </div>
-      </div>
+        </div>
       </div>
     );
   }
 }
 
 export default App;
-
-
-
