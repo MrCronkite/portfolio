@@ -1,0 +1,14 @@
+$text-color: grey;
+
+* {
+  background-color: blue;
+}
+
+h1 {
+  font-family: serif;
+  color: $text-color;
+}
+
+p {
+  font-family: "Museo Sans 300 Light", Helvetica, sans-serif;
+}
