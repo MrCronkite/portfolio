@@ -1,0 +1,59 @@
+@import "./params.scss";
+
+.section {
+  display: flex;
+  background-color: $bg_color;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  &__info {
+    width: 470px;
+    font-family: "Roboto", sans-serif;
+    color: $color_text;
+    &__title {
+      width: 100%;
+      padding-top: 40px;
+      font-size: 41px;
+      line-height: 1.341;
+      padding-bottom: 60px;
+    }
+    &__subtitle {
+      font-weight: bold;
+      padding-bottom: 60px;
+    }
+    &__list {
+      list-style: none;
+      margin-bottom: 100px;
+      li {
+        display: flex;
+        i {
+          font-size: 23px;
+          background-color: #fff;
+          width: 47px;
+          height: 37px;
+          padding-top: 13px;
+          padding-left: 3px;
+          margin-top: 30px;
+          border: solid 1px $bg_text;
+          border-radius: 50%;
+          text-align: center;
+        }
+        p {
+          margin-left: 30px;
+          padding-top: 40px;
+        }
+      }
+      li:first-child {
+        p {
+          padding-top: 46px;
+        }
+      }
+    }
+  }
+  &__img {
+    width: 639px;
+    height: 557px;
+  }
+}

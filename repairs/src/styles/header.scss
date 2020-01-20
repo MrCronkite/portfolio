@@ -1,0 +1,53 @@
+@import "./params.scss";
+
+.header {
+  height: 90px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    padding-top: 10px;
+    height: 70%;
+  }
+  &__cell_my {
+    padding-top: 20px;
+    color: $color_text;
+    display: flex;
+    float: left;
+    text-indent: initial;
+    &__tell {
+      display: block;
+      width: 200px;
+      margin-right: 10px;
+      font-size: 12px;
+      text-align: right;
+      a {
+        text-decoration: none;
+        color: $color_text;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: right;
+      }
+    }
+    &__button {
+      border-radius: 10px;
+      background-color: rgb(255, 210, 0);
+      text-align: center;
+      width: 170px;
+      height: 49px;
+      p {
+        padding-top: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    &__cell_my {
+      &__tell {
+        display: none;
+      }
+    }
+  }
+}
