@@ -7,14 +7,14 @@
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
-  padding-top: 50px;
+  padding-top: 5vw;
   &__info {
     width: 470px;
     font-family: "Roboto", sans-serif;
     color: $color_text;
     &__title {
       width: 100%;
-      padding-top: 40px;
+      padding-top: 3vw;
       font-size: 41px;
       line-height: 1.341;
       padding-bottom: 3vw;
