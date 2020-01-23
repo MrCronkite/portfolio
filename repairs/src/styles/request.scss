@@ -7,4 +7,24 @@
 
   background-size: 50vw;
   height: 30vw;
+  &__form {
+    color: $color_text;
+    &__title {
+      width: 400px;
+    }
+    &__subtitle {
+    }
+    &__data {
+      input {
+      }
+    }
+    &__button {
+    }
+    &__text {
+      p {
+        a {
+        }
+      }
+    }
+  }
 }
