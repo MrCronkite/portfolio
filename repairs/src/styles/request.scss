@@ -5,24 +5,64 @@
   background-repeat: no-repeat;
   background-position: top right;
 
-  background-size: 50vw;
-  height: 30vw;
+  background-size: 60vw;
+  height: 35vw;
   &__form {
+    background-color: #fff;
+    width: 49%;
+    height: 35vw;
     color: $color_text;
     &__title {
       width: 400px;
+      padding-top: 4vw;
+      padding-bottom: 2vw;
     }
     &__subtitle {
+      width: 300px;
+      padding-bottom: 2vw;
     }
     &__data {
+      display: flex;
+      flex-wrap: wrap;
       input {
+        margin: 4px;
+        margin-bottom: 1vw;
+        border-radius: 10px;
+        padding: 30px;
+        padding-right: 55px;
+        font-size: 13px;
+        border: 1px solid $bg_color;
       }
     }
     &__button {
+      display: block;
+      text-decoration: none;
+      color: $color_text;
+      width: 500px;
+      height: 45px;
+      border-radius: 10px;
+      font-size: 16px;
+      padding-top: 28px;
+      text-align: center;
+      background-color: $bg_text;
     }
     &__text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2vw;
+      width: 37vw;
       p {
+        width: 230px;
+        //padding-right: 40px;
+        font-size: 15px;
+        color: $color_text;
+        line-height: 1.6;
         a {
+          text-decoration: none;
+          color: black;
+          padding-top: 1px;
+          font-weight: bold;
         }
       }
     }
