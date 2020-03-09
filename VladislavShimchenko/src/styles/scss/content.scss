@@ -1,0 +1,43 @@
+.content {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  padding-top: 80px;
+  position: relative;
+  &__menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__collaps {
+      width: 400px;
+    }
+  }
+}
+
+.btn__cv {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+.card {
+  margin: 5px;
+  &-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+      margin-top: 4px;
+
+      width: 300px;
+    }
+  }
+}
+
+.progress {
+  width: 385px;
+  margin: 5px;
+  &-bar {
+    margin-left: 2px;
+  }
+}

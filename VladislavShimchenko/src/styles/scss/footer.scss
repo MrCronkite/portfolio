@@ -1,0 +1,12 @@
+.footer {
+  &__title {
+    text-align: center;
+  }
+  p {
+    margin: 10px;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-around;
+  }
+}

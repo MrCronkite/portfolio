@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vladislavShimchenko</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./dist/css/all.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main_content">
+      <header class="header">
+        <div class="header__img"></div>
+        <div class="header__me">
+          <p class="header__me__name">Vladyslav Shimchenko</p>
+          <p class="header__me__dev">Frontend Developer</p>
+        </div>
+      </header>
+      <div class="content">
+        <a href="./dist/cv.pdf" download="cv.pdf" class="btn btn-info btn__cv">
+          Download CV
+        </a>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  ABOUT ME
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Front-end developer with 1+ years of experience in production.
+                Have experience with a variety of technologies such as
+                JavaScript, React, Redux, Webpack, CSS(Styled-components, SCSS,
+                PostCSS) and so on. Always eager to learn something new.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  SKILLS
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-info"
+                    role="progressbar"
+                    style="width: 60%;"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    React/Redux 60%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-info"
+                    role="progressbar"
+                    style="width: 70%;"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Github 70%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-info"
+                    role="progressbar"
+                    style="width: 80%;"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Gulp/Webpack 80%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-info"
+                    role="progressbar"
+                    style="width: 90%;"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    CSS/HTML 90%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-info"
+                    role="progressbar"
+                    style="width: 70%;"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    JavaScript 70%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  WORKS
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <a href="http://quaint-nose.surge.sh"
+                  >Landing page (HTML5, CSS3, JS)</a
+                >
+                <a href="http://telling-plastic.surge.sh/"
+                  >Multi-page site (HTML5, CSS3, JS)</a
+                >
+                <a href="http://irate-heart.surge.sh/"
+                  >ToDo on ReactJs (React, JSX, Bootstrap)</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <h3 class="footer__title">SEND ME A LINE</h3>
+        <p>
+          If you are interested in what i do or you would like to use my
+          services, please contact me through the form below. Or write in one of
+          the social networks.
+        </p>
+         <div class="footer__links">
+            <a href="https://github.com/MrCronkite"
+            ><i class="fa fa-github-square"></i>Github</a
+          >
+          <a href="https://www.linkedin.com/in/vladislav-shimchenko-744765133/"
+            ><i class="fa fa-linkedin-square"></i>Linkedin</a
+          >
+          <a href="https://t.me/farles"><i class="fa fa-telegram"></i>Telegram</a>
+         </div>
+      </footer>
+    </div>
+  </body>
+</html>
