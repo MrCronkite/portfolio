@@ -1,4 +1,6 @@
 .footer {
+  padding: 5px;
+  height: 250px;
   &__title {
     text-align: center;
   }
@@ -8,5 +10,14 @@
   &__links {
     display: flex;
     justify-content: space-around;
+  }
+
+  &__mail {
+    margin: 0 auto;
+    p {
+      text-align: center;
+      font-size: 15px;
+      color: rgb(72, 126, 133);
+    }
   }
 }

@@ -9,4 +9,17 @@
   background-color: #e2e0e0;
   height: 100%;
   width: 500px;
+  border-radius: 50px;
+}
+
+@media (max-width: 500px) {
+  .main_content {
+    width: 401px;
+  }
+}
+
+@media (max-width: 450px) {
+  .main_content {
+    width: 370px;
+  }
 }
