@@ -1,0 +1,127 @@
+.filter {
+  display: flex;
+  margin: 0 auto;
+  width: 1128px;
+  margin-bottom: 23px;
+  &__input {
+    display: flex;
+    &__text {
+      text-transform: uppercase;
+      margin-top: 39px;
+      margin-left: 15px;
+      margin-right: 12px;
+    }
+    &__min,
+    &__max {
+      padding-left: 0px;
+      margin-top: 25px;
+      width: 130px;
+      height: 43px;
+    }
+    &__min::placeholder {
+      padding-left: 11px;
+      font-size: 15px;
+      color: #000;
+    }
+    &__max::placeholder {
+      padding-left: 12px;
+      font-size: 15px;
+      color: #000;
+    }
+    &__price {
+      text-transform: uppercase;
+      margin-left: 8px;
+      margin-top: 39px;
+    }
+  }
+  &__drop {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .filter {
+    margin: 0 auto;
+    width: 1014px;
+
+    &__input {
+      display: none;
+    }
+    &__drop {
+      display: flex;
+      align-items: center;
+      height: 45px;
+      width: 1024px;
+      justify-content: space-between;
+      &__tile {
+        text-transform: uppercase;
+        margin-left: 16px;
+        font-weight: 500;
+      }
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+  .custom-select {
+    display: none;
+  }
+}
+.custom-select {
+  margin-top: 24px;
+  margin-right: 13px;
+  width: 263px;
+  height: 45px;
+  position: relative;
+  font-family: Arial;
+  border: 1px solid grey;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  border: 1px solid #000;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+
+.select-items div,
+.select-selected {
+  padding: 13px 16px;
+  background-color: #fff;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #c6d5fd;
+}

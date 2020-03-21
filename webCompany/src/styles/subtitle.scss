@@ -1,0 +1,36 @@
+.subtitle {
+  display: flex;
+  margin: 0 auto;
+  height: 45px;
+  width: 1300px;
+  background-color: #1f497b;
+  align-items: center;
+  &__nav {
+    display: flex;
+    margin-left: 87px;
+    margin-top: -4px;
+    list-style: none;
+    color: white;
+    &__item {
+      text-transform: uppercase;
+      font-stretch: condensed;
+      font-weight: 100;
+      padding-right: 39px;
+    }
+  }
+  &__basket {
+    margin-left: 290px;
+    display: flex;
+    &__text {
+      margin-left: 8px;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .subtitle {
+    display: none;
+  }
+}
