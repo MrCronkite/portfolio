@@ -1,3 +1,6 @@
+$hover_color: invert(48%) sepia(79%) saturate(2476%) hue-rotate(35deg)
+  brightness(118%) contrast(119%);
+
 .header {
   display: flex;
   align-items: center;
@@ -6,6 +9,12 @@
   width: 1300px;
   background-color: #265c9a;
   color: white;
+  &__modal {
+    display: none;
+  }
+  &__popap {
+    display: none;
+  }
   &__menu {
     display: none;
   }
@@ -31,6 +40,11 @@
     margin-top: 1px;
     padding-right: 9px;
     border-bottom: 0.8px solid white;
+    cursor: pointer;
+
+    svg:hover {
+      filter: $hover_color;
+    }
     &__text {
       font-size: 16px;
       padding-right: 80px;
@@ -50,6 +64,19 @@
     margin-left: 296px;
     margin-top: 2px;
     color: white;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: yellow;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 127px;
+      height: 1px;
+      margin-top: -4px;
+      background-color: white;
+    }
   }
 }
 
@@ -57,13 +84,89 @@
   .header {
     width: 1024px;
     height: 72px;
+    &__modal {
+      display: none;
+      width: 278px;
+      height: 355px;
+      margin-top: 285px;
+      margin-left: 400px;
+      position: absolute;
+      background-color: white;
+      z-index: 99;
+      .custom-select {
+        display: block;
+        margin-left: 17px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        height: 26px;
+        width: 242px;
+        input {
+          color: black;
+        }
+      }
+      .filter__input {
+        display: block;
+
+        input {
+          margin-top: 20px;
+          width: 239px;
+          margin-left: 18px;
+        }
+      }
+      a {
+        display: block;
+        height: 35px;
+        width: 243px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: red;
+        text-decoration: none;
+        padding-top: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      img {
+        cursor: pointer;
+        position: absolute;
+        top: -26px;
+        right: 0;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
     &__menu {
       display: block;
       cursor: pointer;
       margin-left: 20px;
+      img:hover {
+        filter: $hover_color;
+      }
+      &__popap {
+        display: none;
+        position: absolute;
+        width: 988px;
+        height: 195px;
+        background-color: #265c9a;
+        margin-left: -20px;
+        padding: 18px;
+        P {
+          text-transform: uppercase;
+          color: white;
+          padding-left: 17px;
+          padding-top: 10px;
+          padding-bottom: 9.6px;
+        }
+        P:hover {
+          background-color: #618cbf;
+        }
+      }
     }
     &__logo {
       margin-left: 40px;
+      letter-spacing: 0.3px;
       margin-top: 3px;
     }
     &__number {
@@ -73,13 +176,180 @@
       display: none;
     }
     &__search {
-      margin-left: 43px;
-      margin-top: -1px;
-      padding-right: 425px;
-      margin-right: 42px;
+      margin-left: 41px;
+      margin-top: 2px;
+      padding-right: 426px;
+      margin-right: 41px;
       border-bottom: 2px solid #3b6ca4;
+      svg:hover {
+        filter: $hover_color;
+      }
       &__tr {
         display: block;
+        cursor: pointer;
+        &:hover {
+          filter: $hover_color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .header {
+    width: 766px;
+    &__logo {
+      margin-left: 36px;
+      letter-spacing: 0px;
+    }
+    &__modal {
+      display: none;
+      width: 278px;
+      height: 355px;
+      margin-top: 285px;
+      margin-left: 234px;
+      position: absolute;
+      background-color: white;
+      z-index: 99;
+      .custom-select {
+        display: block;
+        margin-left: 17px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        height: 26px;
+        width: 242px;
+        input {
+          color: black;
+        }
+      }
+      .filter__input {
+        display: block;
+
+        input {
+          margin-top: 20px;
+          width: 239px;
+          margin-left: 18px;
+        }
+      }
+      a {
+        display: block;
+        height: 35px;
+        width: 243px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: red;
+        text-decoration: none;
+        padding-top: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    }
+    &__menu {
+      &__popap {
+        position: absolute;
+        width: 730px;
+        height: 195px;
+        background-color: #265c9a;
+        margin-left: -20px;
+        padding: 18px;
+        P {
+          text-transform: uppercase;
+          color: white;
+          padding-left: 17px;
+          padding-top: 10px;
+          padding-bottom: 9.6px;
+        }
+        P:hover {
+          background-color: #618cbf;
+        }
+      }
+    }
+
+    &__search {
+      margin-top: -1px;
+      margin-left: 38px;
+      padding-right: 182px;
+      margin-right: 38px;
+    }
+    svg {
+      margin-top: -2px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    width: 320px;
+    height: 69px;
+    padding-top: 4px;
+    &__modal {
+      display: none;
+      width: 278px;
+      height: 355px;
+      margin-top: 285px;
+      margin-left: 3vw;
+      position: absolute;
+      background-color: white;
+      z-index: 99;
+      .custom-select {
+        display: block;
+        margin-left: 17px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        height: 26px;
+        width: 242px;
+        input {
+          color: black;
+        }
+      }
+      .filter__input {
+        display: block;
+
+        input {
+          margin-top: 20px;
+          width: 239px;
+          margin-left: 18px;
+        }
+      }
+      a {
+        display: block;
+        height: 35px;
+        width: 243px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: red;
+        text-decoration: none;
+        padding-top: 15px;
+        margin-left: 17px;
+        margin-top: 20px;
+      }
+    }
+    &__menu {
+      &__popap {
+        width: 284px;
+      }
+    }
+    &__logo {
+      margin-left: 22px;
+      margin-top: 5px;
+    }
+    &__search {
+      padding-right: 0px;
+      border-bottom: none;
+      svg {
+        width: 16px;
+        margin-left: 24px;
+        margin-top: 8px;
+        height: 30px;
+      }
+      &__text {
+        display: none;
+      }
+      &__tr {
+        margin-left: -21px;
+        padding-top: 3px;
       }
     }
   }

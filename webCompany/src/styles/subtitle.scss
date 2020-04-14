@@ -1,3 +1,4 @@
+@import "./header.scss";
 .subtitle {
   display: flex;
   margin: 0 auto;
@@ -16,11 +17,19 @@
       font-stretch: condensed;
       font-weight: 100;
       padding-right: 39px;
+      &:hover {
+        cursor: pointer;
+        color: yellow;
+      }
     }
   }
   &__basket {
     margin-left: 290px;
     display: flex;
+    svg:hover {
+      filter: $hover_color;
+      cursor: pointer;
+    }
     &__text {
       margin-left: 8px;
       color: white;

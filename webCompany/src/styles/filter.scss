@@ -1,3 +1,4 @@
+@import "./header.scss";
 .filter {
   display: flex;
   margin: 0 auto;
@@ -53,13 +54,18 @@
       height: 45px;
       width: 1024px;
       justify-content: space-between;
+      cursor: pointer;
       &__tile {
         text-transform: uppercase;
         margin-left: 16px;
         font-weight: 500;
       }
       img {
-        margin-right: 20px;
+        margin-right: 16px;
+        margin-top: 1px;
+        &:hover {
+          filter: $hover_color;
+        }
       }
     }
   }
@@ -103,6 +109,7 @@
 
 .select-items div,
 .select-selected {
+  color: black;
   padding: 13px 16px;
   background-color: #fff;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -110,6 +117,7 @@
 }
 
 .select-items {
+  color: black;
   position: absolute;
   top: 100%;
   left: 0;
@@ -123,5 +131,20 @@
 
 .select-items div:hover,
 .same-as-selected {
+  color: black;
   background-color: #c6d5fd;
+}
+
+@media (max-width: 1080px) {
+  .filter {
+    width: 760px;
+    padding-top: 3px;
+  }
+}
+
+@media (max-width: 770px) {
+  .filter {
+    width: 311px;
+    padding-top: 0;
+  }
 }

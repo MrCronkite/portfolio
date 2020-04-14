@@ -8,7 +8,53 @@
   </head>
   <body>
     <header class="header">
-      <img src="./dist/imgs/open-menu 1.png" class="header__menu" alt="" />
+      <div id="modal" class="header__modal">
+        <div class="custom-select">
+          <select>
+            <option value="0">Любого логотипа</option>
+            <option value="1">Компакт-камера</option>
+            <option value="2">Беззеркальная</option>
+            <option value="3">Зеркальная</option>
+            <option value="4">Среднеформатная</option>
+          </select>
+        </div>
+        <div class="custom-select">
+          <select>
+            <option value="0">Любого бренда</option>
+            <option value="1">Canon</option>
+            <option value="2">Nikon</option>
+            <option value="3">Sony</option>
+            <option value="4">Fuijflm</option>
+            <option value="5">Samsung</option>
+            <option value="6">Olympus</option>
+          </select>
+        </div>
+        <div class="filter__input">
+          <input
+            placeholder="от                                     500 000"
+            type="text"
+            class="filter__input__min"
+          />
+          <input
+            placeholder="до                                25 000 000"
+            type="text"
+            class="filter__input__max"
+          />
+        </div>
+        <a id="select_modal" href="#">применить</a>
+        <img id="close" src="./dist/imgs/cross.png" alt="" />
+      </div>
+      <div class="header__menu">
+        <img onclick="popap()" src="./dist/imgs/open-menu 1.png" alt="" />
+        <div id="popapp" class="header__menu__popap">
+          <p>мобильные телефоны</p>
+          <p>планшеты</p>
+          <p>фототехника</p>
+          <p>ноутбуки</p>
+          <p>телевизоры</p>
+        </div>
+      </div>
+
       <p class="header__logo">
         логотип
       </p>
@@ -48,7 +94,7 @@
         />
       </svg>
 
-      <a href="#" class="header__delivery"> Доставка и оплата</a>
+      <a href="#" class="header__delivery">Доставка и оплата</a>
     </header>
     <div class="subtitle">
       <ul class="subtitle__nav">
@@ -80,7 +126,7 @@
         <p class="filter__drop__tile">
           фототехника
         </p>
-        <img src="./dist/imgs/adjust 2.png" alt="" />
+        <img onclick="modal()" src="./dist/imgs/adjust 2.png" alt="" />
       </div>
       <div class="custom-select">
         <select>
@@ -126,8 +172,10 @@
             Полнокадровая цифровая зеркальная камера, предназначенная для
             опытных любителей профессиональных фотографов и видеооператоров.
             Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3 Мп.
-            CMOS-сенсор размером 36х24 мм 14-битный процессор DIGIC 5+,
-            61-точечный автофокус.
+            <span
+              >CMOS-сенсор размером 36х24 мм 14-битный процессор DIGIC 5+,
+              61-точечный автофокус.</span
+            >
           </p>
           <p class="list__items__main__price">4 400,00 руб.</p>
           <p class="list__items__main__discount">
@@ -153,7 +201,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -178,7 +226,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -203,7 +251,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -228,7 +276,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -253,7 +301,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -278,7 +326,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -303,7 +351,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -328,7 +376,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -353,7 +401,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
@@ -378,7 +426,7 @@
           </p>
           <p class="list__items__tile__text">
             Полнокадровая цифровая зеркальная камера, предназначенная для
-            опытных любителей, профессиональных фотографов.
+            опытных любителей<span>, профессиональных фотографов</span>.
           </p>
           <p class="list__items__tile__price">
             3 200,00 руб.
