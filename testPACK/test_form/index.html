@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./dist/css/main.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="main__registr">
+				<div class="main__registr__head">
+					<p>Sign up</p>
+				</div>
+				<div id="registr" class="main__registr__form">
+					<div id="head" class="main__registr__form__title">
+						<h1>New user?</h1>
+						<p>Use the form below to create your account.</p>
+					</div>
+					<form
+						class="main__registr__form_action"
+						method="POST"
+						name="form"
+						onsubmit="valid(this)"
+						id="form"
+					>
+						<div class="main__registr__form_action__name">
+							<div class="main__registr__form_action__name__first">
+								<p>First Name</p>
+								<input name="firstName" id="firstName" type="text" />
+							</div>
+							<div class="main__registr__form_action__name__last">
+								<p>Last Name</p>
+								<input name="lastName" id="lastName" type="text" />
+							</div>
+							<div class="main__registr__form_action__name__first">
+								<p>Nationality</p>
+								<div class="custom-select" style="width: 234px">
+									<select name="nationality" id="nationality">
+										<option value="American">American</option>
+										<option value="Belarus">Belarus</option>
+										<option value="Russian">Russian</option>
+										<option value="Tatar">Tatar</option>
+										<option value="Ukrainian">Ukrainian</option>
+										<option value="American">American</option>
+									</select>
+								</div>
+							</div>
+							<div class="main__registr__form_action__name__last">
+								<p>E-mail</p>
+								<input
+									type="mail"
+									class="mail"
+									placeholder="alice.miller@yahoo.com"
+									id="email"
+									name="mail"
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+								/>
+							</div>
+							<div class="main__registr__form_action__name__first">
+								<p>Data of Birth</p>
+								<div class="data__select">
+									<div class="custom-select">
+										<select name="data_birth" id="data_birth">
+											<option value="21">21</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+									</div>
+									<div class="custom-select">
+										<select name="month_birth" id="month_birth">
+											<option value="December">December</option>
+											<option value="Jauary">Jauary</option>
+											<option value="February">February</option>
+											<option value="March">March</option>
+											<option value="April">April</option>
+											<option value="May">May</option>
+											<option value="June">June</option>
+											<option value="July">July</option>
+											<option value="August">August</option>
+											<option value="September">September</option>
+											<option value="October">October</option>
+											<option value="November">November</option>
+											<option value="December">December</option>
+										</select>
+									</div>
+									<div class="custom-select">
+										<select name="year_birth" id="year_birth">
+											<option value="1995">1995</option>
+											<option value="1990">1990</option>
+											<option value="1991">1991</option>
+											<option value="1992">1992</option>
+											<option value="1993">1993</option>
+											<option value="1994">1994</option>
+											<option value="1995">1995</option>
+											<option value="1996">1996</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+											<option value="2000">2000</option>
+											<option value="2001">2001</option>
+											<option value="2002">2002</option>
+											<option value="2003">2003</option>
+											<option value="2004">2004</option>
+											<option value="2005">2005</option>
+											<option value="2006">2006</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="main__registr__form_action__name__last">
+								<p>Gender</p>
+								<div class="gender">
+									<label class="container"
+										>Male
+										<input value="Male" type="radio" name="gender" />
+										<span class="checkmark"></span>
+									</label>
+									<label class="container"
+										>Female
+										<input value="Female" type="radio" name="gender" />
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="main__registr__form_action__name__first">
+								<p>Password</p>
+								<input
+									pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,64}$"
+									name="password"
+									id="password"
+									type="password"
+								/>
+							</div>
+							<div class="main__registr__form_action__name__last">
+								<p>Confirm Password</p>
+								<input pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,64}$" name="confirm" id="confirm" type="password" />
+							</div>
+						</div>
+					</form>
+					<div class="main__registr__form__submit">
+						<p>Have an account? <a href="#">Login</a></p>
+						<button onclick="submit(this)" type="button">
+							Complete Signup
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./src/js/bundle.js"></script>
+	</body>
+</html>

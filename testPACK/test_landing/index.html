@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=,, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>Узнайте свой прогноз</p>
+      </div>
+      <div class="main">
+        <div class="main_poll" id="poll1">
+          <p>
+            Ответьте на несколько простых вопросов и Вы узнаете, что Вас ждёт!
+          </p>
+          <p>
+            Укажите свой пол:
+          </p>
+
+          <label class="main_poll_block">
+            <input type="radio" name="gender" value="male" />
+            <span class="checkmark">Мужской</span>
+          </label>
+          <label class="main_poll_block">
+            <input type="radio" name="gender" value="female" />
+            <span class="checkmark">Женский</span>
+          </label>
+
+          <button onclick="genderOf(this)">Далее</button>
+        </div>
+        <div class="main_poll" id="poll2">
+          <p class="title-2">
+            Как часто вы пьете алкоголь?
+          </p>
+
+          <label class="main_poll_block">
+            <input type="radio" name="drink" value="1" />
+            <span class="checkmark-2">Я не пью</span>
+          </label>
+          <label class="main_poll_block">
+            <input type="radio" name="drink" value="2" />
+            <span class="checkmark-2">Несколько раз в месяц</span>
+          </label>
+          <label class="main_poll_block">
+            <input type="radio" name="drink" value="3" />
+            <span class="checkmark-2">Несколько раз в неделю</span>
+          </label>
+          <label class="main_poll_block">
+            <input type="radio" name="drink" value="4" />
+            <span class="checkmark-2">Каждый день</span>
+          </label>
+
+          <button onclick="drinkOf(this)">Следующий шаг</button>
+        </div>
+        <div class="main_poll" id="poll3">
+          <p class="title-2">
+            Как часто вы едите фаст-фуд?
+          </p>
+
+          <label class="main_poll_block">
+            <input type="radio" name="food" value="1" />
+            <span class="checkmark-2">Я часто ем фаст-фуд</span>
+          </label>
+          <label class="main_poll_block">
+            <input type="radio" name="food" value="2" />
+            <span class="checkmark-2">Несколько раз в неделю</span>
+          </label>
+          <label class="main_poll_block">
+            <input type="radio" name="food" value="3" />
+            <span class="checkmark-2">Редко, но бывает</span>
+          </label>
+          <label class="main_poll_block">
+            <input type="radio" name="food" value="4" />
+            <span class="checkmark-2">Я не ем фаст фуд</span>
+          </label>
+
+          <button onclick="foodOf(this)">Следующий шаг</button>
+        </div>
+        <div class="main_poll" id="poll4">
+          <p class="title-3">
+            Были ли случаи заболевания раком у Ваших близких родственников?
+          </p>
+
+          <label class="main_poll_block-1">
+            <input type="radio" name="cancer" value="1" />
+            <span class="checkmark-3"
+              >Да, были случаи с<br />
+              близкими родственниками</span
+            >
+          </label>
+          <label class="main_poll_block-1">
+            <input type="radio" name="cancer" value="2" />
+            <span class="checkmark-2">Несколько раз в неделю</span>
+          </label>
+          <label class="main_poll_block-1">
+            <input type="radio" name="cancer" value="3" />
+            <span class="checkmark-2">Редко, но бывает</span>
+          </label>
+          <label class="main_poll_block-1">
+            <input type="radio" name="cancer" value="4" />
+            <span class="checkmark-2">Я не ем фаст фуд</span>
+          </label>
+
+          <button onclick="cancerOf(this)">Следующий шаг</button>
+        </div>
+        <div class="main_poll" id="poll5">
+          <p class="title-2">
+            Введите дату вашего рождения:
+          </p>
+
+          <div class="data__select">
+            <div class="custom-select">
+              <select name="data_birth" id="data_birth">
+                <option value="21">Дата</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+            <div class="custom-select">
+              <select name="month_birth" id="month_birth">
+                <option value="December">Месяц</option>
+                <option value="Jauary">Jauary</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </div>
+            <div class="custom-select">
+              <select name="year_birth" id="year_birth">
+                <option value="1995">Год</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+              </select>
+            </div>
+          </div>
+
+          <button onclick="dataOf()">Следующий шаг</button>
+        </div>
+        <div class="main_poll" id="poll6">
+          <div class="main_poll_tile">
+            <i class="main_poll_tile-items">
+              Analizarea horoscopului personal . . Finalizat! Rectificarea unui
+              semn zodiacal . . . Finalizat! Calcularea variațiilor de răspuns .
+              . . .Finalizat! Generarea predicțiilor . . . . . . . . . . . .
+              Finalizat! Salvarea rezultatului . . . . . . . . . . . . .
+              Finalizat!
+            </i>
+          </div>
+          <a href="#" onclick="nextOf()">Rezultatul este gata!</a>
+        </div>
+        <div class="main_poll" id="poll7">
+          <h3>Спасибо за Ваши ответы.</h3>
+          <h1>
+            <span>Поздравляем!</span><br />
+            Для Вас доступно аудио-сообщение.
+          </h1>
+          <h5>
+            Внимание! Чтобы прослушать персональное сообщение, необходимо
+            позвонить со своего мобильного телефона, нажав на кнопку ниже.
+            Звоните и узнайте, что Вас ждёт.
+          </h5>
+          <div class="call">
+            <img src="./dist/images/Vector-3.png" alt="" />
+            <h4>Позвонить и прослушать</h4>
+          </div>
+        </div>
+
+        <div class="main_footer">
+          <div id="footer">
+            <p>©2019. ABCMOBILE OÜ</p>
+            <p>TALLINN, PETERBURI TEE 71-318, 11415, ESTONIA.</p>
+          </div>
+          <div id="text">
+            TERMENI ȘI CONDIȚII: PRIN UTILIZAREA ACESTUI SERVICIU, CONFIRMI CĂ
+            AI ÎMPLINIT VÂRSTA DE MINIM 18 ANI, AVETI ACORDUL TITULARULUI
+            CARTELEI SI SUNTETI DE ACORD CU ACESTI TERMENI SI CONDITII. PRIN
+            APASAREA TASTEI ASCULTA MESAJUL VETI FI REDIRECTIONAT CATRE APELAREA
+            NUMARULUI SVA AFERENT SERVICIULUI. COST SERVICIU: 1.7 EURO +
+            TVA/MINUT IN ORANGE, VODAFONE, TELEKOM FIX SI MOBIL. ACESTA ESTE UN
+            SERVICIU DE DIVERTISMENT. PRIN ACCESAREA SERVICIULUI SUNTETI DE
+            ACORD CA PUTETI PRIMI MESAJE DE INFORMARE DE LA FURNIZORUL
+            SERVICIULUI LEGATE DE SERVICIILE DE DIVERTISMENT OFERITE SI NOUTATI.
+            IN CAZUL UTILIZARII SERVICIULUI DATELE DVS. – EX. NUMARUL DE
+            TELEFON, VOR FI PROCESATE DOAR IN SCOPURILE DE MAI SUS. FURNIZOR
+            SERVICIU: ABCMOBILE OÜ; REG № 14710834; ADRESA: HARJU MAAKOND,
+            TALLINN, PETERBURI TEE 71-318, 11415, ESTONIA.
+            SUPPORT@ABCMOBILE.COM. INFO SERVICIU VOCE: 0318260010, LUNI-VINERI,
+            9:00-18:00. AFFILIATE: MOBSTRA.COM
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

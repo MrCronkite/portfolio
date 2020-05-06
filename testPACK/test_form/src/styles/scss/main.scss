@@ -1,0 +1,194 @@
+@import "./params.scss";
+
+.main {
+	display: flex;
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: $bg_form;
+	align-items: center;
+	&__registr {
+		display: flex;
+		width: 665px;
+		height: 481px;
+		margin: 0 auto;
+		.thanks {
+			margin-top: 178px;
+			margin-left: 43px;
+		}
+		.sub {
+			margin-top: 11px;
+			margin-left: 43px;
+		}
+
+		&__head {
+			display: flex;
+			width: 137.2px;
+			height: 480px;
+			background-color: $bg_button;
+			justify-content: baseline;
+			align-items: flex-end;
+			p {
+				position: absolute;
+				color: white;
+				transform: rotate(270deg);
+				margin-left: 23px;
+				margin-top: -70px;
+				font-size: 49px;
+				line-height: 63px;
+				letter-spacing: 0.5px;
+			}
+		}
+		&__form {
+			background-image: url(../../../dist/css/Shape-2.svg);
+			background-repeat: no-repeat;
+			background-position-x: 220px;
+			background-position-y: 126px;
+			position: relative;
+			width: 505px;
+			padding-left: 21px;
+			background-color: #fff;
+			padding-top: 40px;
+			font-family: "Work Sans", sans-serif;
+			h1 {
+				font-family: "Work Sans", sans-serif;
+				font-size: 22px;
+				letter-spacing: -0.4px;
+			}
+			p {
+				font-family: "Work Sans", sans-serif;
+				letter-spacing: -0.33px;
+				font-size: 14px;
+				line-height: 16px;
+				color: #a6a6a6;
+			}
+			&__submit {
+				display: flex;
+				margin-top: 86px;
+				p {
+					letter-spacing: -0.8px;
+				}
+				a {
+					letter-spacing: -0px;
+					font-family: "Work Sans", sans-serif;
+					font-size: 13px;
+					color: $bg_button;
+				}
+				@keyframes move {
+					from,
+					to {
+						margin-right: -10px;
+					}
+					25%,
+					75% {
+						left: 10px;
+					}
+					50% {
+						margin-left: 35%;
+					}
+				}
+				button {
+					margin-left: 184px;
+					border: none;
+					width: 156px;
+					height: 32px;
+					color: white;
+					font-size: 13px;
+					font-weight: 200;
+					font-variant: normal;
+					letter-spacing: -0.3px;
+					font-family: "Work Sans", sans-serif;
+					margin-top: -5px;
+					background-color: $bg_button;
+				}
+				.btn_eror:active {
+					border: 2px solid red;
+					color: red;
+					animation: move 0.1s ease-in-out;
+				}
+			}
+		}
+		&__form_action {
+			margin-top: 20px;
+
+			&__name {
+				position: relative;
+				display: flex;
+				flex-wrap: wrap;
+				@keyframes shadow {
+					from {
+						opacity: 0;
+					}
+					50% {
+						opacity: 0;
+					}
+					to {
+						opacity: 1;
+					}
+				}
+				&__first {
+					margin-right: 14px;
+				}
+				&__first:nth-child(1) {
+					animation: shadow 1s ease-in-out;
+				}
+				&__last:nth-child(2) {
+					animation: shadow 2s ease-in-out;
+				}
+				&__first:nth-child(3) {
+					animation: shadow 3s ease-in-out;
+				}
+				&__last:nth-child(4) {
+					animation: shadow 4s ease-in-out;
+				}
+				&__first:nth-child(5) {
+					animation: shadow 5s ease-in-out;
+				}
+				&__last:nth-child(6) {
+					animation: shadow 6s ease-in-out;
+				}
+				&__first:nth-child(7) {
+					animation: shadow 7s ease-in-out;
+				}
+				&__last:nth-child(8) {
+					animation: shadow 8s ease-in-out;
+				}
+
+				input {
+					border: none;
+					font-family: "Work Sans", sans-serif;
+					font-size: 14px;
+					margin-top: 5px;
+					padding-bottom: 6px;
+					width: 235px;
+					border-bottom: 1px solid #e2e2e2;
+					margin-bottom: 15px;
+					background-color: rgba(0, 0, 0, 0);
+				}
+
+				input:invalid:not(:placeholder-shown) {
+					border-bottom: 2px solid red;
+					color: red;
+					background-image: none;
+				}
+
+				.mail {
+					background-image: url("data:image/svg+xml,%3Csvg width='11px' height='34px' viewBox='0 0 46 54' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-56.000000, -59.000000%29' fill='%235a61ed'%3E%3Cpolygon points='70.1468531 85.8671329 97.013986 59 100.58042 62.5664336 70.1468531 93 56 78.8531469 59.5664336 75.2867133'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+					background-repeat: no-repeat;
+					background-position-x: right;
+					background-position-y: center;
+				}
+				p {
+					font-size: 12px;
+					letter-spacing: -0.3px;
+					line-height: 14px;
+				}
+				object {
+					position: absolute;
+					display: block;
+					margin-top: -90px;
+				}
+			}
+		}
+	}
+}
