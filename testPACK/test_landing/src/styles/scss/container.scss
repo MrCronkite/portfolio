@@ -6,9 +6,16 @@
 }
 
 .container {
-  width: 320px;
+  width: 100vw;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .data__select {

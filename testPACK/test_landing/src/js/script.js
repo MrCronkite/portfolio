@@ -114,6 +114,7 @@ function nextOf() {
   poll6.style.cssText = "display: none";
   poll7.style.cssText = "display: block";
   text.style.cssText = "display: block";
+  footer.style.cssText = "display: none";
 }
 
 //select
